@@ -1,0 +1,32 @@
+{
+  "name": "api-ingressos",
+  "version": "1.0.0",
+  "description": "API-Ingressos projeto 2 prog web backend",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon -e mustache,js,html,css app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lucas-Munhoz/API-Ingressos.git"
+  },
+  "keywords": [
+    "API"
+  ],
+  "author": "Lucas Munhoz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Lucas-Munhoz/API-Ingressos/issues"
+  },
+  "homepage": "https://github.com/Lucas-Munhoz/API-Ingressos#readme",
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.13.0",
+    "mongoose": "^8.10.1",
+    "mustache-express": "^1.3.2",
+    "nodemon": "^3.1.9"
+  }
+}

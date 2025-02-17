@@ -1,0 +1,6 @@
+<h1>Lista de Ingressos</h1>
+<ul>
+    {{#ingressos}}
+        <li>{{nome}} - {{preco}} - <a href="/ingressos/{{_id}}">Detalhes</a></li>
+    {{/ingressos}}
+</ul>
