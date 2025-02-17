@@ -1,4 +1,18 @@
-<h1>Comprar Ingresso</h1>
-<form action="/usuarios/comprar-ingresso/{{usuarioId}}/{{ingressoId}}" method="POST">
-    <button type="submit">Confirmar Compra</button>
-</form>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Comprar Ingresso</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h2>Comprar Ingresso</h2>
+        <a href="/ingressos">Comprar Mais</a>
+    </header>
+    <h3>{{nome}}</h3>
+    <p>Preço: R$ {{preco}}</p>
+    <form action="/comprar-ingresso/{{id}}" method="post">
+        <button type="submit">Confirmar Compra</button>
+    </form>
+</body>
+</html>

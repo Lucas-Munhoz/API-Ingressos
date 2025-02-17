@@ -1,4 +1,23 @@
-<h1>Detalhes do Ingresso</h1>
-<p><strong>Nome:</strong> {{nome}}</p>
-<p><strong>Preço:</strong> {{preco}}</p>
-<p><strong>Descrição:</strong> {{descricao}}</p>
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Ingresso</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Detalhes do Ingresso</h1>
+        <a href="/ingressos">Comprar Ingressos</a>
+    </header>
+    
+    <main>
+        <div class="detalhes">
+            <h2>{{nome}}</h2>
+            <p><strong>Preço:</strong> R$ {{preco}}</p>
+            <p><strong>Quantidade Disponível:</strong> {{quantidadeDisponivel}}</p>
+        </div>
+    </main>
+</body>
+</html>

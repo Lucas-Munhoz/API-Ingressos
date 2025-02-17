@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Ingressos</title>
+    <title>Meus Ingressos</title>
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
     <header>
-        <h2>Ingressos</h2>
-        <button id="meusIngressos"">Meus Ingressos</button>
+        <h2>Meus Ingressos</h2>
+        <a href="/ingressos">Comprar Ingressos</a>
     </header>
     <ul>
         {{#ingressos}}
             <li>
                 {{nome}} - R$ {{preco}}
-                <button class="comprar-ingresso" href="#" data-id="{{id}}">Comprar</button>
+                <a href="/ingresso/{{id}}">Detalhes</a>
             </li>
         {{/ingressos}}
     </ul>

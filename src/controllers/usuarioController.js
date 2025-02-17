@@ -27,6 +27,7 @@ exports.autenticarUsuario = async (req, res) => {
     }
 
     res.cookie('token', token, { httpOnly: true, secure: false });
+    res.cookie('usuarioId', usu._id.toString(), { httpOnly: true, secure: false });
     res.redirect('/ingressos');
 };
 

@@ -5,8 +5,7 @@ exports.listarIngressos = async (req, res) => {
 
     try {
         const ingressos = await ingressoModel.listarIngressos(id);
-
-        res.status(200).json(ingressos);
+        res.render('ingressos', { ingressos });
     }
     catch(error) {
         console.error("Erro ao listar ingressos : ", error);

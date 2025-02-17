@@ -1,10 +1,22 @@
-<h1>Login</h1>
-<form action="/usuarios/autenticacao" method="POST">
-    <label>Email:</label>
-    <input type="email" name="email" required>
-    <br>
-    <label>Senha:</label>
-    <input type="password" name="senha" required>
-    <br>
-    <button type="submit">Entrar</button>
-</form>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h2>Login</h2>
+    </header>
+    <div class="content">
+        <form action="/usuarios/autenticacao" method="post">
+            <label>Email:</label>
+            <input type="email" name="email" required>
+            <label>Senha:</label>
+            <input type="password" name="senha" required>
+            <button type="submit">Entrar</button>
+        </form>
+        <p>Não possui conta? <a href="/cadastro">Cadastre-se</a></p>
+    </div>
+</body>
+</html>

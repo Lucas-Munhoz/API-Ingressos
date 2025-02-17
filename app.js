@@ -16,6 +16,7 @@ app.set('views', path.join(__dirname, 'src/views'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
+app.use(express.static(path.join(__dirname, 'src', 'public')));
 
 app.use(require('./src/helpers/mongo'));
 
@@ -29,12 +30,11 @@ app.get('/', (req, res) => {
 app.get('/login', (req, res) => {
     res.render('login');
 });
+
 app.get('/cadastro', (req, res) => {
     res.render('cadastro')
 });
-app.get('/ingressos', (req, res) => {
-    res.render('ingressos')
-});
+
 app.get('/detalhes-ingresso', (req, res) => {
     res.render('detalhes_ingresso')
 });
